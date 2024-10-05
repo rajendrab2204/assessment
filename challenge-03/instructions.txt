@@ -1,0 +1,8 @@
+copy the updatejson.py into where you wanted to execute
+run the following commands to update config.json
+To update DEV info in json execute bellow command:
+python3 ./updatejson.py --env DEV --json ./configs/config.json --csv ./conPROD -json ./configs/input.csv
+
+To update PROD info in json file execute the bellow command:
+python3 ./updatejson.py --env PROD --json ./configs/config.json --csv ./configs/input.csv
+

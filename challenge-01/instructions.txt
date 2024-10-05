@@ -1,0 +1,7 @@
+in find.py i have imported pandas as pd for reading table_data.xlsx
+how to run:
+copy find.py into directory where table_data.xlsx file is present
+make sure python3 is installed, now run the python file 
+command to run:
+python3 ./find.py
+

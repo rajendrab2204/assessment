@@ -1,0 +1,16 @@
+I have created a multi stage docker file which has building and running of server application
+now created start.sh which does the following operations in the container while running
+1.created a sym links to file.txt based on envirnoment variable passed
+for example: 
+
+if ENV=dev:
+file.txt is sym link of file-dev.txt now due to this file-dev.txt will be read and displayed when http://localhost:8080 is accessed
+
+if ENV=prod
+file.txt is sym link of file-prod.txt now due to this file-prod.txt will be read and displayed when http://localhost:8080 is accessed
+
+How to build container image using docker-compose
+run bellow command to build and run server
+export ENVIRONMENT=dev; sudo -E docker-compose up --build
+
+now based on ENVIRONMENT variable http://localhost will return prod or dev

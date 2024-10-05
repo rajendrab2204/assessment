@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile  # Optional: specify a different Dockerfile name
+    environment:
+      - ENVIRONMENT=${ENVIRONMENT}  # Pass environment variable
+    ports:
+      - "8080:8080"
